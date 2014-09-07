@@ -15,18 +15,16 @@ while True:
             if hasattr(report, 'time'):
                 print report.time
         
-        if report['class'] == 'lat':
-            if hasattr(report, 'lat'):
-                print report.lat
+        try: 
+            report = session.next()
+            if report['class'] == 'lat':
+                if hasattr(report, 'lat'):
+                    print report.lat
         
-        if report['class'] == 'lon':
-            if hasattr(report, 'lon'):
-                print report.lon
-                 
-    except KeyError:
-        pass
-    except KeyboardInterrupt:
-        quit()
-    except StopIteration:
-        session = None
-        print "GPSD has terminated"
+            try: 
+                report = session.next()
+                if report['class'] == 'lon':
+                    if hasattr(report, 'lon'):
+                        print report.lat
+            finally:
+                print 'I think something should go here'
