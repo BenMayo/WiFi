@@ -7,14 +7,9 @@ session.stream(gps.WATCH_ENABLE | gps.WATCH_NEWSTYLE)
 while True:
     try:
         report = session.next()
-        if report['class'] == 'TPV':
+        if report['class'] == 'TPV' or 'lat':
             if hasattr(report, 'time'):
                 print report.time
-
-        report = session.next()
-        if report['class'] == 'lat':
-            if hasattr(report, 'lat'):
-                print report.lat
                 
         
     except KeyError:
