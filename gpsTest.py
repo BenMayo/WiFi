@@ -14,6 +14,14 @@ while True:
         if report['class'] == 'TPV':
             if hasattr(report, 'time'):
                 print report.time
+        
+        if report['class'] == 'lat':
+            if hasattr(report, 'lat'):
+                print report.lat
+        
+        if report['class'] == 'lon':
+            if hasattr(report, 'lon'):
+                print report.lon
                  
     except KeyError:
         pass
