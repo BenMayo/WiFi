@@ -1,1 +1,1 @@
-print 'hello world - if this prints out on the RPi then we have success'
+print 'hello world - Ben and Chris > £100M'
