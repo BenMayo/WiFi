@@ -2,7 +2,7 @@
 
 import sqlite3
 
-db = sqlite3.connect('data/ex')
+db = sqlite3.connect('/home/pi/Desktop/Wifi/ex')
 
 cursor = db.cursor()
 cursor.execute('''
