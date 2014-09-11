@@ -65,7 +65,7 @@ print lon
 print lat
 
 
-cursor.execute("""INSERT INTO train1 ('timestamp', 'lat', 'lon') VALUES ('1', 1, 1)""", (timeStamp, lon, lat))
+cursor.execute("""INSERT INTO train1 ('timestamp', 'lat', 'lon') VALUES ('1', 1, 1)""")
 
 # cursor.execute("""INSERT INTO train1 ('timestamp', 'lat', 'lon') VALUES (?, ?, ?)""", (timeStamp, lon, lat))
 conn.close()
