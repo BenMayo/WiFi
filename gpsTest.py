@@ -16,7 +16,6 @@ while x<1:
         if report['class'] == 'TPV':
             if hasattr(report, 'time'):
                 timeStamp = report.time
-                print timeStamp
                 x = x+1      
     except KeyError:
         pass
@@ -35,7 +34,6 @@ while x<1:
         if report['class'] == 'TPV':
             if hasattr(report, 'lon'):
                 lon = report.lon
-                print lon
                 x = x+1      
     except KeyError:
         pass
@@ -52,7 +50,6 @@ while x<1:
         if report['class'] == 'TPV':
             if hasattr(report, 'lat'):
                 lat = report.lat
-                print lat
                 x = x+1      
     except KeyError:
         pass
@@ -62,4 +59,7 @@ while x<1:
         session = None
         print "GPSD has terminated"
 
+print timeStamp
+print lon
+print lat
 
