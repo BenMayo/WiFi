@@ -16,7 +16,6 @@ while x<1:
         if report['class'] == 'TPV':
             if hasattr(report, 'time'):
                 print report.time
-                cursor.execute("insert into train1 values '%s'" % report.time)
                 x = x+1      
     except KeyError:
         pass
@@ -26,6 +25,7 @@ while x<1:
         session = None
         print "GPSD has terminated"
 
+#                 cursor.execute("insert into train1 values '%s'" % report.time)
 
 
 x = 0
