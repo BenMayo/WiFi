@@ -1,4 +1,4 @@
-import gpsimport
+import gps
 import sqlite3
 
 conn = sqlite3.connect('ex.db')
