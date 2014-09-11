@@ -5,7 +5,6 @@ session = gps.gps("localhost", "2947")
 session.stream(gps.WATCH_ENABLE | gps.WATCH_NEWSTYLE)
 
 x = 0
-
 while x<1:
     try:
         report = session.next()
