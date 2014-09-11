@@ -18,8 +18,9 @@ while x<1:
             if hasattr(report, 'time'):
                 cursor.execute("insert into train1 values '%s'" % report.time)
                 print report.time
-                session.
-                x = x+1      
+        session = None
+        print "GPSD has terminated"
+        x = x+1      
     except KeyError:
         pass
     except KeyboardInterrupt:
