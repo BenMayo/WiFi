@@ -2,11 +2,20 @@
 
 import sqlite3
 
-db = sqlite3.connect('/home/pi/Desktop/Wifi/ex')
+conn = sqlite3.connect('ex.db')
+print "Opened database successfully";
 
-cursor = db.cursor()
-cursor.execute('''
-    CREATE TABLE train1(id INTEGER PRIMARY KEY, lat FLOAT,
-                       lon FLOAT, timestamp TIMESTAMP, resultText TEXT, resultNum FLOAT)
-''')
-db.commit()
+
+
+# 
+
+
+
+# db = sqlite3.connect('/home/pi/Desktop/Wifi/ex')
+# 
+# cursor = db.cursor()
+# cursor.execute('''
+#     CREATE TABLE train1(id INTEGER PRIMARY KEY, lat FLOAT,
+#                        lon FLOAT, timestamp TIMESTAMP, resultText TEXT, resultNum FLOAT)
+# ''')
+# db.commit()
