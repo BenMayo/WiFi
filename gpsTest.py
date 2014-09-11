@@ -1,15 +1,11 @@
 import gps
-import sqlite3
-
-conn = sqlite3.connect('ex.db')
-cursor = conn.cursor()
-
 
 # Listen on port 2947 (gpsd) of localhost
 session = gps.gps("localhost", "2947")
 session.stream(gps.WATCH_ENABLE | gps.WATCH_NEWSTYLE)
 
 x = 0
+
 while x<1:
     try:
         report = session.next()
@@ -24,9 +20,6 @@ while x<1:
     except StopIteration:
         session = None
         print "GPSD has terminated"
-
-#                 cursor.execute("insert into train1 values '%s'" % report.time)
-
 
 x = 0
 while x<1:
@@ -59,5 +52,3 @@ while x<1:
     except StopIteration:
         session = None
         print "GPSD has terminated"
-
-
