@@ -1,4 +1,9 @@
-import gps
+import gpsimport
+import sqlite3
+
+conn = sqlite3.connect('ex.db')
+cursor = conn.cursor()
+
 
 # Listen on port 2947 (gpsd) of localhost
 session = gps.gps("localhost", "2947")
@@ -11,7 +16,9 @@ while x<1:
         report = session.next()
         if report['class'] == 'TPV':
             if hasattr(report, 'time'):
+                cursor.execute("insert into train1 values '%s'" % report.time)
                 print report.time
+                session.
                 x = x+1      
     except KeyError:
         pass
