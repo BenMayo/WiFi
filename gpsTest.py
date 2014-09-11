@@ -15,9 +15,8 @@ while x<1:
         report = session.next()
         if report['class'] == 'TPV':
             if hasattr(report, 'time'):
-                print report.time
                 timeStamp = report.time
-                cursor.execute("insert into train1 values '%s'" % timeStamp)
+                print timeStamp
                 x = x+1      
     except KeyError:
         pass
@@ -35,7 +34,8 @@ while x<1:
         report = session.next()
         if report['class'] == 'TPV':
             if hasattr(report, 'lon'):
-                print report.lon
+                lon = report.lon
+                print lon
                 x = x+1      
     except KeyError:
         pass
@@ -51,7 +51,8 @@ while x<1:
         report = session.next()
         if report['class'] == 'TPV':
             if hasattr(report, 'lat'):
-                print report.lat
+                lat = report.lat
+                print lat
                 x = x+1      
     except KeyError:
         pass
