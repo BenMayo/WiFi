@@ -7,8 +7,11 @@ import gpsTest
 # assign lat lon and timestamp to the variables within gpsTest - this will save us having to reference it throughout the script
 lat = gpsTest.lat
 lon = gpsTest.lon
-timestamp = gpsTest.timeStamp
+timestampString = gpsTest.timeStamp
+
+# the timestamp is currently a string in a bit of a strange format - let's break it down a bit into component parts, and then as a actual timestamp
+time = timestampString[11:-6]
 
 print lat
 print lon
-print timestamp
+print time
