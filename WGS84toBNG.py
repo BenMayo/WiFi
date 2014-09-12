@@ -92,6 +92,3 @@ E, N = WGS84toOSGB36(float(lat), float(lon))
 
 north = int (N)
 east = int (E)
-
-print north
-print east
