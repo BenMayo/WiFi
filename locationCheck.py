@@ -11,4 +11,4 @@ timestamp = gpsTest.timeStamp
 
 print lat
 print lon
-print timeStamp
+print timestamp
