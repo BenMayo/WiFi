@@ -21,4 +21,3 @@ print time
 print date
 
 # define a bounding box
-minLat = 
