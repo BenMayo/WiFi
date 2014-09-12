@@ -1,14 +1,8 @@
 import gps
 import sqlite3
-from scipy import *
-import sys
-from suds import null, WebFault
-from suds.client import Client
-import logging
-import locationCheck
 
-conn = sqlite3.connect('ex.db')
-cursor = conn.cursor()
+# conn = sqlite3.connect('ex.db')
+# cursor = conn.cursor()
 
 
 # Listen on port 2947 (gpsd) of localhost
