@@ -13,9 +13,6 @@ timestampString = timestampString.replace(" ", "")
 time = timestampString[11:-5]
 date = timestampString[:10]
 
-# now get the locations in east and north (British National Grid - this will be much easier to work with)
-east = gpsTest.east
-north = gpsTest.north
 
 # define peak and offpeak times
 
@@ -23,8 +20,6 @@ print lat
 print lon
 print time
 print date
-print east
-print north
 
 
 
