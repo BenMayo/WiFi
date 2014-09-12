@@ -8,5 +8,7 @@ cursor = conn.cursor()
 cursor.execute('''
     CREATE TABLE train1(id INTEGER PRIMARY KEY, lat FLOAT,
                        lon FLOAT, timestamp TIMESTAMP, resultText TEXT, resultNum FLOAT)
+                       
+                       
 ''')
 conn.commit()

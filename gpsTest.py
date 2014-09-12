@@ -25,8 +25,6 @@ while x<1:
         session = None
         print "GPSD has terminated"
 
-
-
 x = 0
 while x<1:
     try:
@@ -63,7 +61,6 @@ while x<1:
 print timeStamp
 print lon
 print lat
-
 
 cursor.execute("""INSERT INTO train1 ('timestamp', 'lat', 'lon') VALUES (?, ?, ?)""", (timeStamp, lon, lat))
 conn.commit()
