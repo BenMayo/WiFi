@@ -6,8 +6,6 @@ from suds.client import Client
 import logging
 import locationCheck
 
-import mysql.connector
-
 lat = locationCheck.lat
 lon = locationCheck.lon
     
