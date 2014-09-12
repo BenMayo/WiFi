@@ -57,13 +57,15 @@ while x<1:
         session = None
         print "GPSD has terminated"
 
-# now we have all three variables outside of the GPS function
-print timeStamp
-print lon
-print lat
+# now we have all three variables outside of the GPS function - these print lines are commented out as we don't need them to always run.
+# print timeStamp
+# print lon
+# print lat
 
-cursor.execute("""INSERT INTO train1 ('timestamp', 'lat', 'lon') VALUES (?, ?, ?)""", (timeStamp, lon, lat))
-conn.commit()
-conn.close()
+
+# this sql commented out also - this was just testing (it works)
+# cursor.execute("""INSERT INTO train1 ('timestamp', 'lat', 'lon') VALUES (?, ?, ?)""", (timeStamp, lon, lat))
+# conn.commit()
+# conn.close()
 
 
