@@ -3,7 +3,6 @@
 
 # the gps posistion and time comes from the gpsTest, so we import that here
 import gpsTest
-import WGS84toBNG
 
 # assign lat lon and timestamp to the variables within gpsTest - this will save us having to reference it throughout the script
 lat = gpsTest.lat
@@ -15,8 +14,8 @@ time = timestampString[11:-5]
 date = timestampString[:10]
 
 # now get the locations in east and north (British National Grid - this will be much easier to work with)
-east = WGS84toBNG.east
-north = WGS84toBNG.north
+east = gpsTest.east
+north = gpsTest.north
 
 # define peak and offpeak times
 
