@@ -8,10 +8,13 @@ import gpsTest
 lat = gpsTest.lat
 lon = gpsTest.lon
 timestampString = gpsTest.timeStamp
+timestampString = timestampString.replace(" ", "")
 
 # the timestamp is currently a string in a bit of a strange format - let's break it down a bit into component parts, and then as a actual timestamp
-time = timestampString[11:-5].replace(" ", "")
+time = timestampString[11:-5]
+date = timestampString[:10]
 
 print lat
 print lon
 print time
+print date
