@@ -3,7 +3,7 @@
 
 # the gps posistion and time comes from the gpsTest, so we import that here
 import gpsTest
-import WGS84toBNG.py
+import WGS84toBNG
 
 # assign lat lon and timestamp to the variables within gpsTest - this will save us having to reference it throughout the script
 lat = gpsTest.lat
