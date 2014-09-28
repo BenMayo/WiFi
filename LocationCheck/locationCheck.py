@@ -15,12 +15,8 @@ date = timestampString[:10]
 
 
 # define peak and offpeak times
-
 print lat
 print lon
 print time
 print date
-
-
-
 # define a bounding box
