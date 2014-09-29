@@ -17,13 +17,12 @@ end_time = time.time()
 timestamp = datetime.datetime.utcnow()
 elapsed_time = end_time - start_time
 print("Elapsed time was %g seconds" % (end_time - start_time))
-mydriver.close()
+mydriver.quit()
 
 conn = sqlite3.connect('ex.db')
    
 cursor = conn.cursor()
 cursor.execute('''
     INSERT INTO train1 (resultNum, timestamp) VALUES (?,?)''', (elapsed_time,timestamp))
-
 
 conn.commit()
