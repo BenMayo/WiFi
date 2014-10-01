@@ -1,4 +1,4 @@
 import time
 while True:
-    execfile ("seleniumTest.py")
-    time.sleep(10)
+    execfile ("sqlLite.py")
+    time.sleep(60)
