@@ -23,10 +23,10 @@ elapsed_time = end_time - start_time
 print("Elapsed time was %g seconds" % (end_time - start_time))
 mydriver.quit()
 
-conn = sqlite3.connect('ex.db')
-   
-cursor = conn.cursor()
-cursor.execute('''
-    INSERT INTO train1 (resultNum, timestamp) VALUES (?,?)''', (elapsed_time,timestamp))
-
-conn.commit()
+# conn = sqlite3.connect('ex.db')
+#    
+# cursor = conn.cursor()
+# cursor.execute('''
+#     INSERT INTO train1 (resultNum, timestamp) VALUES (?,?)''', (elapsed_time,timestamp))
+# 
+# conn.commit()
