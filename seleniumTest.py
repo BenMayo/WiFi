@@ -10,9 +10,13 @@ from selenium.common.exceptions import NoSuchElementException
 
 baseurl = "http://www.bbc.co.uk"
 
+testurl = "http://www.bbc.co.uk"
+
 mydriver = webdriver.Firefox()
-start_time = time.time()
 mydriver.get(baseurl)
+start_time = time.time()
+mydriver.get(testurl)
+
 end_time = time.time()
 timestamp = datetime.datetime.utcnow()
 elapsed_time = end_time - start_time
