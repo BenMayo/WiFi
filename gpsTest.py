@@ -63,9 +63,6 @@ while x<1:
 # print lat
 
 
-# this sql commented out also - this was just testing (it works)
-# cursor.execute("""INSERT INTO train1 ('timestamp', 'lat', 'lon') VALUES (?, ?, ?)""", (timeStamp, lon, lat))
-# conn.commit()
-# conn.close()
+
 
 
