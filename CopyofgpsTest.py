@@ -19,7 +19,9 @@ while x<1 and y <1 and z<1:
                 y = y+1
             elif hasattr(report, 'lat'):
                 lat = report.lat
-                z = z+1 
+                z = z+1
+                
+                print ''
             
     except KeyError:
         pass
