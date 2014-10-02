@@ -21,7 +21,7 @@ while x<1 and y <1 and z<1:
                 lat = report.lat
                 z = z+1
                 
-                print ''
+                print 'hello'
             
     except KeyError:
         pass
