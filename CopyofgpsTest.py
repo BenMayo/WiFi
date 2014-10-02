@@ -28,3 +28,5 @@ while x<1 and y <1 and z<1:
     except StopIteration:
         session = None
         print "GPSD has terminated"
+
+print lat
