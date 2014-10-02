@@ -30,4 +30,3 @@ while x<3:
         session = None
         print "GPSD has terminated"
         
-print lon
